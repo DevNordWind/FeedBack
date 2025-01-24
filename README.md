@@ -10,7 +10,9 @@
 - DB_PASSWORD - Password of database
 - DB_HOST - Host of database
 - DB_PORT - Port of database
+
 *USER\PASSWORD\HOST\PORT - Can be empty if you use SQLITE3*
+
 - REDIS_DATABASE - Redis DB
 - REDIS_HOST - Redis Host
 - REDIS_PORT - Redis Port
