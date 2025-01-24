@@ -124,7 +124,7 @@ deny = Window(
     SwitchTo(
         GetText('back-btn'),
         id='back',
-        state=AdminStateTicket.deny
+        state=AdminStateTicket.browsing
     ),
 
     state=AdminStateTicket.deny
