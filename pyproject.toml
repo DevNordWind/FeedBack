@@ -1,23 +1,23 @@
 [tool.poetry]
-name = "feedback"
-version = "0.1.0"
-description = ""
+name = "FeedBack"
+version = "0.1"
+description = "Simple Feedback bot"
 authors = ["DevNordWind <Dev.IvanZakharov@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
-aiogram = "^3.17.0"
-aiogram-dialog = "^2.3.1"
-sqlalchemy = "^2.0.37"
-dishka = "^1.4.2"
-adaptix = "^3.0.0b9"
-redis = "^5.2.1"
-fluentogram = "^1.1.10"
-alembic = "^1.14.0"
-python-dotenv = {extras = ["cli"], version = "^1.0.1"}
-aiosqlite = "^0.20.0"
-asyncpg = "^0.30.0"
+python = ">=3.12,<3.13"
+aiogram = "3.17.0"
+aiogram-dialog = "2.3.1"
+sqlalchemy = "2.0.37"
+dishka = "1.4.2"
+adaptix = "3.0.0b9"
+redis = "5.2.1"
+fluentogram = "1.1.10"
+alembic = "1.14.0"
+python-dotenv = {extras = ["cli"], version = "1.0.1"}
+aiosqlite = "0.20.0"
+asyncpg = "0.30.0"
 
 
 [build-system]
