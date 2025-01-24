@@ -1,3 +1,3 @@
 admin-root = <b>🤖 Admins</b>
     .tickets-btn = 🎫 Tickets
-    .stat-btn = 📊 Statistick
+    .stat-btn = 📊 Statistic
