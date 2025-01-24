@@ -26,7 +26,7 @@
 ## System dependencies:
 - Redis
 - Poetry
-- Python > 3.12
+- Python => 3.12 < 3.13
 ## Setup:
 1. Install dependencies
 `poetry install --no-root`
