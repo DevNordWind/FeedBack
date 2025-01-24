@@ -31,6 +31,7 @@ async def on_exception(event: ErrorEvent, **data):
         return await start_external_place(
             event=event.update.message,
             translator=translator,
+            redis_user=redis_user
         )
     if event.update.callback_query:
         return await start_external_place(

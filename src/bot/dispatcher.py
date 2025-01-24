@@ -51,8 +51,6 @@ def get_dispatcher(
 
     profile_texts = get_texts_by_key(translator, 'start.profile-btn')
     create_texts = get_texts_by_key(translator, 'start.create-ticket-btn')
-    print(profile_texts)
-    print(create_texts)
     dp.message.register(start_profile, F.text.in_(profile_texts))
     dp.message.register(start_ticket, F.text.in_(create_texts))
 
@@ -61,7 +59,8 @@ def get_dispatcher(
 
     for dialog in user_dialogs:
         dp.include_router(dialog)
-    dp.message.register(start_admin, F.text.in_(get_texts_by_key(translator, key='start.admin-btn')), IsAdminFilter())
+    admin_texts = get_texts_by_key(translator, 'start.admin-btn')
+    dp.message.register(start_admin, F.text.in_(admin_texts), IsAdminFilter())
 
     for dialog in admin_dialogs:
         dialog.message.filter(IsAdminFilter())
