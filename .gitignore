@@ -3,3 +3,4 @@ __pycache__
 .idea/
 /poetry.lock
 /.env
+/migrations/versions/c5c4d997cc61_prod.py
